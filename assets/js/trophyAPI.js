@@ -1,6 +1,8 @@
+const BaseURL = 'http://127.0.0.1:5041'
+
 class _TrophyAPI {
     async GetAllTrophies() {
-        const URL = `http://127.0.0.1:5041/api/Trophy/all`;
+        const URL = `${BaseURL}/api/Trophy/all`;
         const response = await fetch(URL, {
             method: "GET",
             headers: {
@@ -16,7 +18,7 @@ class _TrophyAPI {
 
         // Returns true if successful and false if failed
         async CreateNewTrophy(trophy) {
-            const URL = `http://127.0.0.1:5041/api/Trophy/new`;
+            const URL = `${BaseURL}/api/Trophy/new`;
             const response = await fetch(URL, {
                 method: "POST",
                 headers: {
