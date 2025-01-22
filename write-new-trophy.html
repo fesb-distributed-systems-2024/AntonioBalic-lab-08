@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>EasyMail</title>
+        <title>EasyTrophy</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,8 +10,30 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
 
-    <body>
+    <body class="min-vh-100">
         <script src="/assets/js/write-new-trophy.js" type="module" defer></script>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="list-all-trophies.html">
+                            List All Trophies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="write-new-trophy.html">
+                            Add A Trophy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <form class="container-sm new-trophy-form">
             <!-- Sportclub input -->
@@ -51,9 +73,27 @@
             </div>
         </form>
 
-        <div class="my-buttons container-sm center">
+        <div class="my-buttons container-sm pb-4">
             <button type="button" id="home-button" class="btn btn-outline-info col">Home</button>
         </div>
+
+        <footer class="text-center text-white mb-10" style="background-color: #0a4275;">
+            <div class="container p-4">
+                <section class="">
+                    <p class="d-flex justify-content-center align-items-center">
+                        <span class="me-3">
+                            <a href="https://github.com/fesb-distributed-systems-2024/AntonioBalic-lab-07" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                                Backend Source code
+                            </a>
+                        </span>
+                        <a href="https://github.com/fesb-distributed-systems-2024/AntonioBalic-lab-08" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            Frontend Source code
+                        </a>
+                    </p>
+                </section>
+            </div>
+        </footer>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 
