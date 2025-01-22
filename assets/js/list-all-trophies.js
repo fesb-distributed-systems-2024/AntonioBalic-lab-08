@@ -20,7 +20,7 @@ async function OnGetAllTrophiesButtonClick() {
 
     // First create a header row
     let data = `
-    <thead>
+    <thead class="thead-dark">
         <tr>
             <th>ID</th>
             <th>Sportclub</th>
@@ -37,11 +37,11 @@ async function OnGetAllTrophiesButtonClick() {
         data = data + `
             <tr>
                 <td>${e.id}</td>
-                <td>${e.sportclub}</td>
-                <td>${e.trophyname}</td>
+                <td class="text-break">${e.sportclub}</td>
+                <td class="text-break">${e.trophyname}</td>
                 <td>${e.rank}</td>
                 <td>${e.year}</td>
-                <td>${e.sponsors}</td>
+                <td class="text-break">${e.sponsors}</td>
             </tr>
         `
     });
